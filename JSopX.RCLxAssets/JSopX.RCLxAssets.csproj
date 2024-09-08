@@ -11,6 +11,23 @@
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
+  <!--<ItemGroup>
+    <ProjectReference Include="..\JSopX.ClassLibrary\JSopX.ClassLibrary\JSopX.ClassLibrary.csproj">
+    </ProjectReference>
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <!-- Default case: Reference for JSopX.RCLxAssets -->
+    <ProjectReference Condition="! $([System.String]::Copy($(ProjectPath)).Contains('JSopX.OpenProjectX'))"
+                      Include="..\JSopX.ClassLibrary\JSopX.ClassLibrary\JSopX.ClassLibrary.csproj">
+    </ProjectReference>
+
+    <!-- Special case: Reference for JSopX.OpenProjectX -->
+    <ProjectReference Condition="$([System.String]::Copy($(ProjectPath)).Contains('JSopX.OpenProjectX\JSopX.RCLxAssets'))"
+                      Include="..\..\JSopX.ClassLibrary\JSopX.ClassLibrary\JSopX.ClassLibrary.csproj">
+    </ProjectReference>
+  </ItemGroup>
+
 
 
 </Project>
