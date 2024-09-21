@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <RCLxAssetsClassLibraryPath>..\JSopX.ClassLibrary\JSopX.ClassLibrary</RCLxAssetsClassLibraryPath>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(RCLxAssetsClassLibraryPath)\JSopX.ClassLibrary.csproj" />
+  </ItemGroup>
+</Project>
