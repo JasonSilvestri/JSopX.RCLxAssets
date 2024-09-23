@@ -31,7 +31,7 @@ using System;
 //[assembly: InternalsVisibleTo("JSopX.SharedResources")]
 //[assembly: InternalsVisibleTo("JSopX.RCLxProper")]
 //[assembly: InternalsVisibleTo("JSopX.RCLxAssets")]
-//[assembly: InternalsVisibleTo("JSopX.RCLxComponents")]
+//[assembly: InternalsVisibleTo("JSopX.RCLxAssets")]
 //[assembly: InternalsVisibleTo("JSopX.AngularCore")]
 //[assembly: InternalsVisibleTo("JSopX.ReactCore")]
 //[assembly: InternalsVisibleTo("JSopX.VueCore")]
@@ -1015,7 +1015,7 @@ namespace Jsopx.ClassLibrary
                 /// product development (e.g., minimal viable product).
                 /// </para>
                 /// </summary>
-                public const string RCLxComponents = "JSopX.RCLxComponents";
+                public const string RCLxComponents = "JSopX.RCLxAssets";
 
 
                 /// <summary>
